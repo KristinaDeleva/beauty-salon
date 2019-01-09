@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ site.title }}</title>
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+	<script src="{{ site.baseurl }}/js/app.js"></script>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	</head>
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-up"></i></button>
+<button id="phoneBtn"><a href="tel:123-456-7890"><i class="fas fa-phone fa-rotate-90"></i></a></button>
+
+</div>
+		<div class="site">
+		<header class='main-header'>
+		<div class="menu-wrap">
+		<p class="site-title"><a href="{{ site.baseurl }}/">Beauty Salon</a></p>
+        <input type='checkbox' id='nav-tog'>
+
+        <!-- Hamburger btn -->
+        <label for='nav-tog'  class="drop-trigger">
+            <!-- Hamburg bars -->
+            <span class="btn-bar top"></span>
+            <span class='btn-bar middle'></span>
+            <span class='btn-bar bottom'></span>
+        </label>
+
+        <nav id="mainNav" class="main-nav">
+            <!-- This covers the whole background of the dropped menu -->
+            <label for='nav-tog' class='nav-revert'></label>
+
+            <!-- Menu items -->
+            <a href='{{ site.baseurl }}/' class="nav-item">
+               <span> Home </span>
+			   <div class="into"></div>
+            </a>
+            <a href='{{ site.baseurl }}/services' class="nav-item">
+                <span> Services </span>
+				<div class="into"></div>
+            </a>
+            <a href='{{ site.baseurl }}/gallery' class="nav-item">
+                <span> Gallery </span>
+				<div class="into"></div>
+            </a>
+			
+					<a href='{{ site.baseurl }}/contacts' class="nav-item">
+                <span> Contacts </span>
+				<div class="into"></div>
+            </a>
+        </nav>
+    </div>
+</header>
+			{{ content }}
+			
+			<section class="site-footer">
+				<ul>
+					<li>
+						<a class="soc" href="https://www.facebook.com/">
+						<i class="fab fa-facebook"></i></a>
+					</li>
+					<li>
+						<a class="soc" href="https://twitter.com/">
+						<i class="fab fa-twitter"></i></a>
+					</li>
+					<li>
+						<a class="soc" href="https://www.instagram.com/">
+						<i class="fab fa-instagram"></i></a>
+					</li>
+				</ul>
+        </section>
+		</div>
+</body>
+</html>

@@ -1,0 +1,148 @@
+---
+layout: site
+title: Services
+permalink: /services/
+---
+
+<section id="services">
+  <div class="into2"></div>
+  <h2>Our Services</h2>
+  <div id="slideshow">
+    
+    <div class="mySlides">
+      <div class="menu">
+        <div id="sidebar">
+    <a href="#">Full Mani-Pedi</a>
+    <p>1 hr 30 min | $30.00</p>
+  </div>
+  <div class="border"></div>
+  <div id="page-wrap">
+    <a href="#">Describe your service here. What makes it great? Use short catchy text to tell people what you offer, and the benefits they will receive. A great description gets readers...</a>
+  </div>
+  </div>
+      </div>
+    
+    <div class="mySlides">
+    <div class="menu">
+     <div id="sidebar">
+    <a href="#">Gel Manicure</a>
+    <p>1 hr | $15.00</p>
+  </div>
+  <div class="border"></div>
+  <div id="page-wrap">
+    <a href="#">Describe your service here. What makes it great? Use short catchy text to tell people what you offer, and the benefits they will receive. A great description gets readers...</a>
+  </div>
+  </div>
+  </div>
+  
+  <div class="mySlides">
+  <div class="menu">
+     <div id="sidebar">
+    <a href="#">Pedicure</a>
+    <p>45 min | $10.00</p>
+  </div>
+  <div class="border"></div>
+  <div id="page-wrap">
+    <a href="#">Describe your service here. What makes it great? Use short catchy text to tell people what you offer, and the benefits they will receive. A great description gets readers...</a>
+  </div>
+  </div>
+</div>
+  
+  <div class="mySlides">
+  <div class="menu">
+     <div id="sidebar">
+    <a href="#">Oxygen Facial</a>
+    <p>1 hr 30 min | $40.00</p>
+  </div>
+  <div class="border"></div>
+  <div id="page-wrap">
+    <a href="#">Describe your service here. What makes it great? Use short catchy text to tell people what you offer, and the benefits they will receive. A great description gets readers...</a>
+  </div>
+  </div>
+</div>
+  
+  <div class="mySlides">
+  <div class="menu">
+     <div id="sidebar">
+    <a href="#">Anti-Ageing Facial</a>
+    <p>1 hr 30 min | $40.00</p>
+  </div>
+  <div class="border"></div>
+  <div id="page-wrap">
+    <a href="#">Describe your service here. What makes it great? Use short catchy text to tell people what you offer, and the benefits they will receive. A great description gets readers...</a>
+  </div>
+  </div>
+</div>
+  
+  <div class="mySlides">
+  <div class="menu">
+     <div id="sidebar">
+    <a href="#">Deep Cleansing Facial</a>
+    <p>1 hr 30 min | $40.00</p>
+  </div>
+  <div class="border"></div>
+  <div id="page-wrap">
+    <a href="#">Describe your service here. What makes it great? Use short catchy text to tell people what you offer, and the benefits they will receive. A great description gets readers...</a>
+  </div>
+  </div>
+</div>
+  
+  <div class="mySlides">
+  <div class="menu">
+     <div id="sidebar">
+    <a href="#">Make Up</a>
+    <p>1 hr 30 min | $50.00</p>
+  </div>
+  <div class="border"></div>
+  <div id="page-wrap">
+    <a href="#">Describe your service here. What makes it great? Use short catchy text to tell people what you offer, and the benefits they will receive. A great description gets readers...</a>
+  </div>
+  </div>
+</div>
+  
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+    
+      <div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+  <span class="dot" onclick="currentSlide(7)"></span> 
+</div>
+  
+  </div>
+</section>
+
+<script>currentSlide(1)</script>
+<script>
+	var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
